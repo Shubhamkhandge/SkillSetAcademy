@@ -15,9 +15,12 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -58,14 +61,15 @@
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
                   <li><a href="#">Deep Dropdown 3</a></li>
                   <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
+                  <li><a href="#">Deep Dropdown 5</a></li>
               </li>
               <li><a href="#">Dropdown 2</a></li>
               <li><a href="#">Dropdown 3</a></li>
@@ -90,9 +94,16 @@
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
       <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
+        <!-- <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
         <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="courses.html" class="btn-get-started">Get Started</a>
+        </div> -->
+        <h2 data-aos="fade-up" data-aos-delay="100">Master <b>Full-Stack Development</b> ,<br>with <u
+            class="text-warning">Real-World Projects</u></h2>
+        <p data-aos="fade-up" data-aos-delay="200">Transform your career with our industry-focused courses. Learn from
+          experts, build real projects, and get certified with internship and job placement opportunities.</p>
+        <div class="d-flex" data-aos="fade-up" data-aos-delay="300">
           <a href="courses.html" class="btn-get-started">Get Started</a>
         </div>
       </div>
@@ -100,35 +111,60 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section py-5">
 
       <div class="container">
 
         <div class="row gy-4">
 
+          <!-- Image Section -->
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="About SkillSet Academy">
           </div>
 
+          <!-- Content Section -->
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+
+            <!-- Program Title and Description -->
+            <h3>Transform Your Career</h3>
+            <p>
+              At <b>SkillSetAcademy</b>, we offer hands-on, industry-focused training to help you bridge the gap between
+              academic knowledge and real-world skills.
             </p>
+            <p>
+              We prepare you for the challenges of the modern tech industry with practical training and real-world
+              projects.
+            </p>
+
+            <!-- Short Additional Detail -->
+            <p class="mb-4">
+              Gain the skills you need to succeed and get job-ready with our expert-led, hands-on courses.
+            </p>
+
+            <!-- Key Features of the Program -->
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+              <li><i class="bi bi-check-circle"></i> Expert Instructors <p>Learn from professionals with 10+ years of
+                  experience in top tech companies</p>
+              </li>
+              <li><i class="bi bi-check-circle"></i> Real-World Projects <p>Build portfolio-worthy projects that
+                  demonstrate your skills to employers</p>
+              </li>
+              <li><i class="bi bi-check-circle"></i> 80% Practical Training <p>Hands-on Learning with live coding
+                  sessions and project development</p>
+              </li>
             </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+            <!-- Read More Link -->
+            <a href="courses.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
+    </section>
+
+    <!-- /About Section -->
 
     <!-- Counts Section -->
     <section id="counts" class="section counts light-background">
@@ -137,31 +173,90 @@
 
         <div class="row gy-4">
 
+          <style>
+            .stats-item {
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .stats-item i {
+                color: #6c757d;
+                margin-bottom: 15px;
+            }
+
+            .purecounter {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #007bff;
+            }
+
+            .purecounter + span {
+                font-size: 1.5rem;
+                color: #333;
+                font-weight: normal;
+                margin-left: 5px;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .stats-item p {
+                margin-top: 10px;
+                font-size: 1rem;
+                color: #333;
+            }
+
+            .d-flex {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+          </style>
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Students</p>
+              <!-- <h2><i class="bi bi-people bg-success text-light rounded p-3"></i></h2> -->
+              <i class="fa-solid fa-users text-secondary fa-2x"></i><i class="fa-solid fa-plus text-dark"></i>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Students Certified</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Courses</p>
+             <i class="fa-solid fa-award text-secondary fa-2x"></i><i class="fa-solid fa-plus text-dark"></i>
+              <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Intenships</p>
             </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 text-center">
+              <div class="stats-item text-center w-100 h-100">
+                  <i class="fa-solid fa-briefcase text-secondary fa-2x"></i>
+                  <i class="fa-solid fa-plus text-dark"></i>
+                  <div class="d-flex text-center">
+                      <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1"
+                      class="purecounter"></span><span>+</span>
+                  </div>
+                  <p>Placements</p>
+              </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Events</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Trainers</p>
+             <i class="fa-solid fa-star text-secondary fa-2x"></i><i class="fa-solid fa-plus text-dark"></i>
+             <span>4.9+</span>
+              <div class="d-flex">
+                <span data-purecounter-start="0.0" data-purecounter-end="4.9" data-purecounter-duration="1.0"
+                class="purecounter"></span><span>.</span><span data-purecounter-start="0.0" data-purecounter-end="4.9" data-purecounter-duration="1.0"
+                class="purecounter"></span><span>+</span>
+              </div>
+              <p>Student Ratings</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -182,8 +277,10 @@
             <div class="why-box">
               <h3>Why Choose Our Products?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
+                corporis.
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -347,7 +444,8 @@
                 </div>
 
                 <h3><a href="course-details.html">Website Design</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae
+                  dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-1-2.jpg" class="img-fluid" alt="">
@@ -363,7 +461,8 @@
             </div>
           </div> <!-- End Course Item-->
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
             <div class="course-item">
               <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
               <div class="course-content">
@@ -373,7 +472,8 @@
                 </div>
 
                 <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae
+                  dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-2-2.jpg" class="img-fluid" alt="">
@@ -389,7 +489,8 @@
             </div>
           </div> <!-- End Course Item-->
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="300">
             <div class="course-item">
               <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
               <div class="course-content">
@@ -399,7 +500,8 @@
                 </div>
 
                 <h3><a href="course-details.html">Copywriting</a></h3>
-                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae
+                  dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-3-2.jpg" class="img-fluid" alt="">
@@ -435,7 +537,8 @@
                 <h4>Walter White</h4>
                 <span>Web Development</span>
                 <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut
+                  aut aut
                 </p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -454,7 +557,8 @@
                 <h4>Sarah Jhinson</h4>
                 <span>Marketing</span>
                 <p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum
+                  temporibus
                 </p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -558,14 +662,16 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+          href=“https://themewagon.com>ThemeWagon
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
