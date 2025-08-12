@@ -217,6 +217,15 @@ h6 {
     opacity: 0;
   }
 }
+.gradient-text {
+  background: linear-gradient(135deg, rgb(37, 99, 235), rgb(124, 58, 237));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For Firefox (optional fallback) */
+  background-clip: text;
+  color: transparent;
+}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -252,7 +261,8 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+  background: linear-gradient(135deg, rgb(37, 99, 235), rgb(124, 58, 237));
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -263,7 +273,7 @@ h6 {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: linear-gradient(135deg, rgb(91, 137, 236), rgb(104, 26, 238));
 }
 
 @media (max-width: 1200px) {
@@ -934,8 +944,7 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  background: linear-gradient(135deg, rgb(37, 99, 235), rgb(124, 58, 237));
 }
 
 @media (max-width: 768px) {
@@ -968,7 +977,7 @@ section,
 .about .content ul i {
   font-size: 1.25rem;
   margin-right: 4px;
-  color: var(--accent-color);
+  color: rgb(124, 58, 237);
 }
 
 .about .content p:last-child {
@@ -976,7 +985,8 @@ section,
 }
 
 .about .content .read-more {
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+  background: linear-gradient(135deg, rgb(37, 99, 235), rgb(124, 58, 237));
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -998,7 +1008,7 @@ section,
 }
 
 .about .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: linear-gradient(135deg, rgb(37, 99, 235), rgb(124, 58, 237));
   padding-right: 19px;
 }
 
@@ -1016,30 +1026,61 @@ section,
 .counts .stats-item {
   padding: 30px;
   width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.counts .stats-item span {
+.counts .stats-item i {
+  color: #6c757d;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.counts .stats-item span,
+.counts .stats-item .purecounter {
   font-size: 48px;
-  display: block;
-  color: var(--accent-color);
   font-weight: 700;
+  /* color: var(--accent-color); */
+  color: rgb(124, 58, 237);
+  display: block;
+}
+
+.counts .stats-item .purecounter + span {
+  font-size: 48px;
+  color: rgb(124, 58, 237);
+  font-weight: 700;
+  margin-left: 5px;
 }
 
 .counts .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 0;
-  margin: 0;
-  font-family: var(--heading-font);
+  margin-top: 10px;
   font-size: 15px;
   font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  padding: 0;
+  font-family: var(--heading-font, sans-serif); /* fallback added */
 }
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us .why-box {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+  background: linear-gradient(135deg, rgb(82, 128, 226), rgb(141, 92, 224));
   padding: 30px;
 }
 
@@ -1061,6 +1102,7 @@ section,
   color: var(--contrast-color);
   transition: all ease-in-out 0.4s;
   border-radius: 50px;
+  border: 2px solid var(--background-color);
 }
 
 .why-us .why-box .more-btn i {
@@ -1068,8 +1110,11 @@ section,
 }
 
 .why-us .why-box .more-btn:hover {
-  color: var(--accent-color);
-  background: var(--surface-color);
+  color: var(--background-color);
+  /* background: var(--surface-color); */
+  transition: all ease-in-out 0.8s;
+  border: 2px solid var(--background-color);
+  background: linear-gradient(135deg, rgb(82, 128, 226), rgb(141, 92, 224));
 }
 
 .why-us .icon-box {
@@ -1082,10 +1127,10 @@ section,
 }
 
 .why-us .icon-box i {
-  color: var(--accent-color);
+  color: rgb(124, 58, 237);
   font-size: 32px;
   margin-bottom: 30px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -1108,7 +1153,8 @@ section,
 
 .why-us .icon-box:hover i {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+  background: linear-gradient(135deg, rgb(82, 128, 226), rgb(141, 92, 224));
 }
 
 /*--------------------------------------------------------------
