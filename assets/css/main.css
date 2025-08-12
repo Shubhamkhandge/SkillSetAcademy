@@ -25,6 +25,7 @@
   --accent-color: #5fcf80; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --gradient-color: linear-gradient(135deg, rgb(82, 128, 226), rgb(141, 92, 224)); /* Gradient color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -868,7 +869,8 @@ section,
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+  background: linear-gradient(135deg, rgb(37, 99, 235), rgb(124, 58, 237));
   margin: 4px 10px;
 }
 
@@ -1165,7 +1167,7 @@ section,
 }
 
 .features .features-item {
-  background-color: var(--surface-color);
+  /* background-color: var(--surface-color); */
   display: flex;
   align-items: center;
   padding: 20px;
@@ -1194,11 +1196,11 @@ section,
 }
 
 .features .features-item:hover {
-  border-color: var(--accent-color);
+  border-color: rgb(124, 58, 237);
 }
 
 .features .features-item:hover h3 a {
-  color: var(--accent-color);
+  color: rgb(124, 58, 237);
 }
 
 /*--------------------------------------------------------------
@@ -1225,16 +1227,23 @@ section,
 }
 
 .courses .course-content h3 a:hover {
-  color: var(--accent-color);
+  color: rgb(124, 58, 237);
 }
 
 .courses .course-content .category {
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+  background: linear-gradient(135deg, rgb(82, 128, 226), rgb(141, 92, 224));
   color: var(--contrast-color);
   font-size: 14px;
   padding: 6px 14px;
+  font-weight: 600;
   margin: 0;
   border-radius: 5px;
+}
+
+.courses .course-content .category:hover {
+  color: var(--contrast-color);
+  background: linear-gradient(135deg, rgb(73, 114, 202), rgb(93, 25, 209));
 }
 
 .courses .course-content .price {
@@ -1245,6 +1254,7 @@ section,
 }
 
 .courses .course-content .description {
+  text-align: justify;
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
@@ -1454,11 +1464,11 @@ section,
   height: 12px;
   background-color: var(--background-color);
   opacity: 1;
-  border: 1px solid var(--accent-color);
+  border: 1px solid rgb(124, 58, 237);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: rgb(124, 58, 237);
 }
 
 @media (max-width: 767px) {
