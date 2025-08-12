@@ -277,6 +277,12 @@ h6 {
   background: linear-gradient(135deg, rgb(91, 137, 236), rgb(104, 26, 238));
 }
 
+@media screen and (max-width: 768px) {
+  .header .logo h1{
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
@@ -740,7 +746,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: rgb(124, 58, 237);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -754,7 +760,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  /* background-color: color-mix(in srgb, var(--accent-color), transparent 20%); */
   color: var(--contrast-color);
 }
 
