@@ -1,39 +1,49 @@
 <?php
   /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+   * Newsletter form submission handler
+   * Uses PHP Email Form library (Pro template only)
+   * Documentation: https://bootstrapmade.com/php-email-form/
+   */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  // Change this to your receiving email
+  $receiving_email_address = 'khandgeshubham404@gmail.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
+  // Check if the PHP Email Form library exists
+  if (file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php')) {
+    include($php_email_form);
   } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+    die('Unable to load the "PHP Email Form" library. Please ensure the file exists at: assets/vendor/php-email-form/php-email-form.php');
   }
 
+  // Create a new form handler
   $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['email'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject ="New Subscription: " . $_POST['email'];
+  $contact->ajax = true; // Enable AJAX
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
+  // Validate and sanitize the email input
+  if (isset($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    $email = strip_tags(trim($_POST['email']));
+  } else {
+    die('Invalid email address.');
+  }
+
+  $contact->to = $receiving_email_address;
+  $contact->from_name = $email;
+  $contact->from_email = $email;
+  $contact->subject = "New Newsletter Subscription";
+
+  // Optional: SMTP settings (only if you plan to use SMTP)
+  // Uncomment and update with correct credentials if needed
   /*
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
+    'host' => 'smtp.yourserver.com',
+    'username' => 'your_smtp_username',
+    'password' => 'your_smtp_password',
+    'port' => '587' // Use 465 for SSL, 587 for TLS
   );
   */
 
-  $contact->add_message( $_POST['email'], 'Email');
+  // Add the message
+  $contact->add_message($email, 'Subscriber Email');
 
   echo $contact->send();
 ?>

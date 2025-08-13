@@ -21,8 +21,6 @@
 
   <!-- Vendor CSS Files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -92,7 +90,7 @@
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-      <div class="heading">
+      <!-- <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
@@ -103,7 +101,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
@@ -158,7 +156,6 @@
         </div>
       </div>
     </section>
-
     <!-- /Courses Course Details Section -->
 
     <!-- Tabs Section -->
@@ -351,93 +348,98 @@
               }
             }
           </script>
+          <script>
+            document.querySelectorAll('.init-swiper').forEach(swiperEl => {
+              const configScript = swiperEl.querySelector('.swiper-config');
+              const config = JSON.parse(configScript.textContent);
+          
+              new Swiper(swiperEl, config);
+            });
+          </script>
           <style>
-            .testimonial-item h4{
+            .testimonial-item h4 {
               font-family: var(--nav-font);
             }
+
             .testimonials .testimonial-item {
               padding: 10px 20px;
               margin: 5px 10px;
               min-height: auto;
             }
+
             .testimonials .testimonial-wrap {
               padding-left: 0;
             }
           </style>
           <div class="swiper-wrapper">
+            <!-- Java Full Stack Review 1 -->
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <h3>Rahul Sharma</h3>
-                  <h4>Placed at TCS with 6.5 LPA</h4>
+                  <h3>Rohit Verma</h3>
+                  <h4>Java Full Stack Developer</h4>
                   <p>
                     <i class="fa fa-quote-left"></i>
-                    <span>Excellent course! The hands-on projects helped me understand real-world development.</span>
+                    <span>This course gave me in-depth knowledge of Java, Spring Boot, and front-end frameworks. The hands-on projects were invaluable in landing my dream job.</span>
                     <i class="fa fa-quote-right"></i>
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Java Full Stack Review 2 -->
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <h3>Priya Patel</h3>
-                  <h4>Full Stack Developer</h4>
+                  <h3>Simran Kaur</h3>
+                  <h4>Backend Developer</h4>
                   <p>
                     <i class="fa fa-quote-left"></i>
-                    <span>Best investment in my career. The instructors are industry experts and the curriculum is perfectly structured.</span>
+                    <span>The practical approach and mentoring helped me grasp complex Java backend concepts quickly. The integration with React made it a complete full stack experience.</span>
                     <i class="fa fa-quote-right"></i>
                   </p>
                 </div>
               </div>
             </div>
+            <!-- Java Full Stack Review 3 -->
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <h3>Amit Kumar</h3>
-                  <h4>Java Full Stack Learner</h4>
+                  <h3>Deepak Sharma</h3>
+                  <h4>Software Engineer</h4>
                   <p>
                     <i class="fa fa-quote-left"></i>
-                    <span>From zero to hero! The course covers everything from basics to advanced concepts. Highly recommended!</span>
+                    <span>The course content is very well structured, covering everything from Java fundamentals to advanced Spring Boot and database management. The career support team was very helpful too!</span>
                     <i class="fa fa-quote-right"></i>
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Java Full Stack Review 4 -->
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <h3>Neha Singh</h3>
-                  <h4>Intern at Infosys</h4>
+                  <h3>Neha Gupta</h3>
+                  <h4>Intern at Tech Solutions</h4>
                   <p>
                     <i class="fa fa-quote-left"></i>
-                    <span>Got internship at Infosys after completing this course. The practical approach is amazing.</span>
+                    <span>Thanks to this course, I got an internship at Tech Solutions. The focus on real-world applications and coding best practices really set me apart.</span>
                     <i class="fa fa-quote-right"></i>
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Java Full Stack Review 5 -->
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <h3>Vikram Mehta</h3>
-                  <h4>Full Stack Developer</h4>
+                  <h3>Arjun Mehta</h3>
+                  <h4>Junior Developer</h4>
                   <p>
                     <i class="fa fa-quote-left"></i>
-                    <span>The real-world projects and mentorship helped me build confidence. Now working as a Full Stack Developer.</span>
-                    <i class="fa fa-quote-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <h3>Anjali Desai</h3>
-                  <h4>Placed with support team</h4>
-                  <p>
-                    <i class="fa fa-quote-left"></i>
-                    <span>Perfect balance of theory and practice. The placement support team is very helpful.</span>
+                    <span>The mentorship and detailed projects helped me master Java full stack development. I’m now confidently working as a Junior Developer at a startup.</span>
                     <i class="fa fa-quote-right"></i>
                   </p>
                 </div>
@@ -449,7 +451,7 @@
       </div>
     </section>
     <!-- /Student Reviews Section -->
-     
+
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -551,9 +553,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
