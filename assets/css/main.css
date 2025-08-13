@@ -496,7 +496,8 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    /* color: var(--nav-dropdown-hover-color); */
+    color: rgb(124, 58, 237);
   }
 
   .navmenu .active i,
@@ -676,7 +677,7 @@ h6 {
 }
 
 .footer .footer-newsletter .newsletter-form:focus-within {
-  border-color: var(--accent-color);
+  border-color: rgb(124, 58, 237);
 }
 
 .footer .footer-newsletter .newsletter-form input[type=email] {
@@ -750,7 +751,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-color: rgb(124, 58, 237) transparent rgb(124, 58, 237) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1584,19 +1585,36 @@ section,
 }
 
 .courses-course-details .course-info h5 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   margin: 0;
   font-family: var(--nav-font);
 }
 
 .courses-course-details .course-info p {
+  text-align: justify;
   margin: 0;
   font-weight: 600;
 }
 
 .courses-course-details .course-info a {
-  color: var(--accent-color);
+  color: rgb(124, 58, 237);
+}
+
+.courses-course-details .button-s {
+  background: linear-gradient(135deg, rgb(82, 128, 226), rgb(141, 92, 224));
+}
+
+.courses-course-details .button-s a {
+  color: white;
+}
+
+.courses-course-details .button-s:hover {
+  background: linear-gradient(135deg, rgb(74, 118, 212), rgb(36, 4, 119), rgb(175, 19, 206));
+}
+
+.courses-course-details .button-s:hover a {
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1623,13 +1641,13 @@ section,
 }
 
 .tabs .nav-link:hover {
-  color: var(--accent-color);
+  color: #6913ff;
 }
 
 .tabs .nav-link.active {
   background-color: var(--surface-color);
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #6913ff;
+  border-color: #6913ff;
 }
 
 .tabs .tab-pane.active {
@@ -1639,11 +1657,12 @@ section,
 .tabs .details h3 {
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .tabs .details p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  text-align: justify;
 }
 
 .tabs .details p:last-child {
@@ -1657,8 +1676,8 @@ section,
   }
 
   .tabs .nav-link.active {
-    color: var(--accent-color);
-    background: var(--accent-color);
+    color: var(--contrast-color);
+    background: linear-gradient(135deg, rgb(82, 128, 226), rgb(141, 92, 224));
   }
 }
 
