@@ -39,6 +39,39 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  
+  <style>
+    /* 1. Remove Bootstrap's default arrow */
+    .accordion-button::after {
+      display: none;
+    }
+
+    /* 2. Add custom icon on the right side using ::before */
+    .accordion-button {
+      position: relative;
+      font-size: 1rem;
+      padding-right: 2.5rem; /* create space for the icon */
+    }
+
+    /* 3. Insert custom + or – icon */
+    .accordion-button::before {
+      content: '+';
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgb(124, 58, 237);
+      transition: all 0.2s ease-in-out;
+    }
+
+    /* 4. When expanded, show – icon */
+    .accordion-button:not(.collapsed)::before {
+      content: '–';
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -789,6 +822,87 @@
     </section>
     <!-- /Trainers Index Section -->
 
+    <section id="faqs" class="section faqs">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>FAQs</h2>
+        <p>Common Questions</p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="faq1-heading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  What types of courses does SkillSetAcademy offer?
+                </button>
+              </h4>
+              <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We offer courses in Web Development, Data Science, UI/UX Design, Soft Skills, and more. Our catalog is constantly expanding to meet industry demand.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="faq2-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  Are the courses self-paced or live?
+                </button>
+              </h4>
+              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Most of our courses are self-paced, but we also host live sessions, workshops, and mentorship opportunities on select tracks.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="faq3-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  Will I get a certificate after completing a course?
+                </button>
+              </h4>
+              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! Upon successful completion of a course, you’ll receive a digital certificate that you can add to your resume or LinkedIn profile.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="faq4-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  How do I get help if I’m stuck in a course?
+                </button>
+              </h4>
+              <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can reach out via our community forums, or connect directly with mentors during live support hours. Our support team is also available via email.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="faq5-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                  How can I contact SkillSetAcademy?
+                </button>
+              </h4>
+              <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can email us at <strong>skillsetacademy007@gmail.com</strong> or call us at <strong>+91 8459631203</strong>. You can also reach out through the contact form on our website.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -822,7 +936,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="courses.html">All Courses</a></li>
-            <li><a href="trainers.html">Mentors</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
             <li><a href="faqs.html">FAQs</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -832,11 +946,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Learning Tracks</h4>
           <ul>
-            <li><a href="courses.html">Frontend Development</a></li>
-            <li><a href="courses.html">Backend Development</a></li>
-            <li><a href="courses.html">UI/UX Design</a></li>
-            <li><a href="courses.html">Data Science</a></li>
-            <li><a href="courses.html">Soft Skills</a></li>
+            <li><a href="java_course.html">Java Development</a></li>
+            <li><a href="python_course.html">Python Development</a></li>
+            <li><a href="mern_mean_course.html">MERN Stack Development</a></li>
+            <li><a href="mern_mean_course.html">MEAN Stack Development</a></li>
+            <li><a href="devops_course.html">DevOps Development</a></li>
           </ul>
         </div>
 
