@@ -597,7 +597,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   position: relative;
 }
 
@@ -1578,6 +1578,249 @@ section,
   }
 }
 
+
+/*--------------------------------------------------------------
+# Student Reviews Section
+--------------------------------------------------------------*/
+.student-reviews .testimonial-item h4 {
+  font-family: var(--nav-font);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  margin: 0;
+  font-size: 14px;
+}
+
+.student-reviews .testimonial-item {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-sizing: content-box;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  min-height: auto;
+  position: relative;
+}
+
+.student-reviews .testimonial-wrap {
+  padding-left: 0;
+}
+
+.student-reviews .testimonials-carousel,
+.student-reviews .testimonials-slider {
+  overflow: hidden;
+}
+
+.student-reviews .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 10px;
+  border: 6px solid var(--background-color);
+  position: absolute;
+  left: -45px;
+}
+
+.student-reviews .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+.student-reviews .testimonial-item .stars {
+  margin: 10px 0;
+}
+
+.student-reviews .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.student-reviews .testimonial-item .quote-icon-left,
+.student-reviews .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.student-reviews .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.student-reviews .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.student-reviews .testimonial-item p {
+  font-style: italic;
+  margin: 15px auto 15px auto;
+}
+
+.student-reviews .swiper-wrapper {
+  height: auto;
+}
+
+.student-reviews .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.student-reviews .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid rgb(124, 58, 237);
+}
+
+.student-reviews .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(124, 58, 237);
+}
+@media (max-width: 767px) {
+  .student-reviews .testimonial-wrap {
+    padding-left: 0;
+  }
+
+  .student-reviews .testimonials-carousel,
+  .student-reviews .testimonials-slider {
+    overflow: hidden;
+  }
+
+  .student-reviews .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+
+  .student-reviews .testimonial-item .testimonial-img {
+    position: static;
+    left: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# technologies-multicloud Section
+--------------------------------------------------------------*/
+/* Headings inside cards */
+/* .technologies-multicloud .testimonial-item h4 {
+  font-family: var(--nav-font, 'Poppins', sans-serif);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  color: #2c2c2c;
+} */
+
+/* Testimonial/Technology Card */
+.technologies-multicloud .testimonial-item {
+  padding: 25px 20px;
+  margin: 10px;
+  height: 100%;
+  background: linear-gradient(145deg, #ffffff, #f4f4f4);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #eee;
+}
+
+/* Hover effect */
+.technologies-multicloud .testimonial-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Wrapper reset */
+.technologies-multicloud .testimonial-wrap {
+  padding-left: 0;
+}
+
+/* Logo/Image inside card */
+.technologies-multicloud .testimonial-item img {
+  max-height: 90px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px;
+  transition: transform 0.3s ease;
+}
+
+.technologies-multicloud .testimonial-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Paragraph text */
+.technologies-multicloud .testimonial-item p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* Optional: quote icon styling */
+.technologies-multicloud .testimonial-item i.fa {
+  color: #7c3aed;
+  margin: 0 4px;
+}
+
+.technologies-multicloud .testimonials-carousel,
+.technologies-multicloud .testimonials-slider {
+  overflow: hidden;
+}
+
+
+.technologies-multicloud .testimonial-item .stars {
+  margin: 10px 0;
+}
+
+.technologies-multicloud .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.technologies-multicloud .swiper-wrapper {
+  height: auto;
+}
+
+.technologies-multicloud .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.technologies-multicloud .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid rgb(124, 58, 237);
+}
+
+.technologies-multicloud .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(124, 58, 237);
+}
+@media (max-width: 767px) {
+.technologies-multicloud .testimonial-wrap {
+  padding-left: 0;
+}
+
+.technologies-multicloud .testimonials-carousel,
+.technologies-multicloud .testimonials-slider {
+  overflow: hidden;
+}
+
+.technologies-multicloud .testimonial-item {
+  padding: 30px;
+  margin: 15px;
+}
+
+.technologies-multicloud .testimonial-item .testimonial-img {
+  position: static;
+  left: auto;
+}
+}
 /*--------------------------------------------------------------
 # Courses Course Details Section
 --------------------------------------------------------------*/
@@ -1690,6 +1933,21 @@ section,
 
 .courses-course-details .button-s:hover a {
   color: white;
+}
+
+.courses-course-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.courses-course-details ul li {
+  padding-bottom: 10px;
+}
+
+.courses-course-details ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: rgb(124, 58, 237);
 }
 
 /*--------------------------------------------------------------
